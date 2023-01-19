@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
 }
 body{
     text-align: center;
@@ -11,6 +14,54 @@ body{
     color: white;
     background-color: black;
 }
+
+.header{
+    height: 8vh;
+    width: 100%;
+    background-color: rgb(72, 72, 72);
+    position: fixed;
+    z-index: 5;
+    opacity: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header h1{
+    font-size: 120%;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    height: 7.5vh;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 3%;
+}
+.header h{
+    background-color: rgb(0, 0, 0);
+    height:8vh;
+    width: 2.5%;
+}
+
+.h11{
+   width: 100%;
+   cursor: pointer;
+   
+}
+
+.h22{
+    width: 100%;
+    cursor: pointer;
+}
+
+.h11:hover{
+    background-color: rgb(103, 101, 101);
+
+}
+.h22:hover{
+    background-color: rgb(103, 101, 101);
+}
+
+
+
 ::-webkit-scrollbar-track {
     background-color: #000000;
 }
@@ -29,12 +80,15 @@ main{
     align-items: space-between;
     position: relative;
 	min-height: 100%;
-    background:rgb(20, 20, 59) 
-            url('https://cdn.discordapp.com/attachments/542421984974471169/1022591085178003557/estrelas.png') 
+    background:rgb(43, 7, 62) 
+            url('https://upload.wikimedia.org/wikipedia/commons/c/cc/Digital_rain_animation_medium_letters_shine.gif') 
             repeat bottom center;
     animation:move-stars 200s linear infinite;
     width: 100%;
+    height: 95vh;
+    
 }
+
 @keyframes move-stars {
     from {background-position:0 0;}
     to {background-position:10000px 0;}
@@ -42,94 +96,81 @@ main{
 .nome{
     position: absolute;
     font-size: 280%;
-    margin-top: 3%;
-    text-shadow:  0 0 10px rgb(57, 52, 52),
-    0 0 0px  #222121; 
+    margin-top: 10vh;
+    text-shadow:  0 0 10px rgb(0, 0, 0),
+    0 0 0px  #000000; 
 }
+
+
 .foto-minha{
     position:absolute;
-    border-radius: 500%;
-    max-width: 25%;
-    margin-top: 10%;
+    border-radius: 60%;
+    max-width: 45vh;
+    margin-top: 32vh;
     cursor: pointer;
-    opacity: 88%;
-}
-.foto-minha:hover{
     opacity: 100%;
+    border: 1px solid rgb(71, 71, 71);
+    box-shadow:  0 0 10px rgb(65, 65, 65),
+     0 0 2.5px  #000000;
 }
+
+
 main p{
     position: absolute;
     font-size: 120%;
-    margin-top: 38%;
+    margin-top: 20vh;
     text-shadow:  0 0 10px rgb(57, 52, 52),
     0 0 0px  #222121;
 }
-main a{
-    border: 0.5px solid rgb(10, 9, 9);
-    box-shadow:  0 0 4px rgb(28, 25, 25),
-     0 0 2.5px  #171717;
-    margin-top: 5%;
-    text-decoration: none;
-    font-size: 85%;
-    padding: 1.5%;
-    color: white;
-    border-radius: 20px;
-    height: 16%;
-    width: 38%;
+
+.vermais{
+    
+    margin-top: 82vh;
+    max-width: 9%;
+    background-color: transparent;
+    border-radius: 360%;
+    opacity: 90%;
+    cursor: pointer;
+    
 }
-.botoes{
-    margin-top: 42%;
-    width: 70vh;
-    height: 1%;
-    padding-bottom: 2%;
+
+
+.vermais2{ 
+    
+    margin-top: 4.8%;
+    max-width: 4.8%;
+    background-color: transparent;
+    border-radius: 360%;
+    opacity: 90%;
+    cursor: pointer;
 }
-.botao{
-    background-color: black;
-    display: inline-block;
-    margin-right: 20%;
-    text-align: center;
-}
-.botao2{
-    background-color: black;
-    display: inline-block;
-    width: 38%;
-    border-left: 10px;
-    border-right: 10px;
-}
-.botao:hover{
-    background-color: rgb(58, 55, 55);
-    border: 0px solid rgb(58, 55, 955);
-}
-.botao2:hover{
-    background-color: rgb(58, 55, 55);
-    border: 0px solid rgb(58, 55, 955);
-}
+
+
 .vao{
     height: 0.5vh;
     background-color: rgb(90, 79, 79);
 }
 .sobre{
-    height: 100%;
-    background-color: black;
+    background-color: rgb(0, 0, 0) ;
     color: white;
     position: relative;
-    padding-bottom: 5%;
+    padding-bottom: 2.5%;
 }
 .sobre h1{
     position: absolute;
     font-size: 185%;
-    margin-top: 3.5%;
+    margin-top: 5%;
     margin-left: 43.5%;
     text-shadow:  0 0 10px rgb(57, 52, 52),
     0 0 0px  #222121;
 }
-.sobre img{
+.sobre_imgs img{
     max-width: 13%;
-    border-radius: 400%;
     border: 1px solid rgb(42, 39, 39);
     box-shadow:  0 0 10px rgb(57, 52, 52),
      0 0 2.5px  #222121;
-    margin-top: 10%;
+    margin-top: 12%;
+    border-radius: 60%;
 }
 .sobre_imgs{
     display: flex;
@@ -154,17 +195,18 @@ main a{
 .sobre3{
     margin-right: 12%;
 }
+
+
 .sobre_descricao h2{
-    font-size: 150%;
-    margin-left: 14%;
+    font-size: 140%;
+    margin-left: 13.5%;
 }
 .sobre_descricao h3{
     font-size: 150%;
-    margin-left: 3%;
 }
 .sobre_descricao h4{
     font-size: 150%;
-    margin-right: 12%;
+    margin-right: 11%;
 }
 .sobre p1{
     margin-left: 6%;
@@ -178,271 +220,13 @@ main a{
     max-width: 300%;
     max-width: 25%;
 }
-.projetos{
 
-    position: relative;
-    height: 190vh;
-    display: flex;
-    justify-content: baseline;
-    align-items: flex-start;
-    background:rgb(20, 20, 59) 
-    url('https://cdn.discordapp.com/attachments/542421984974471169/1022591085178003557/estrelas.png') 
-    repeat bottom center;
-    z-index:0;
-    animation:move-stars 200s linear infinite;
-    overflow: hidden;
-}
-.projetos h1{
-    position: absolute;
-    font-size: 185%;
-    margin-top: 2%;
-    text-shadow:  0 0 10px rgb(57, 52, 52),
-    0 0 0px  #222121;
-    height: 20vh;
-    width: 100%;
-}
-.badges{
-    position: absolute;
-   
-}
-.badges img{
-    margin-top: 8%;
-    margin-right: 3%;
-    max-width: 4%;
-    cursor: pointer;
-    opacity: 70%;
-}
-.css:hover{  
-    opacity: 100%;
-}
-.html:hover{  
-    opacity: 100%;
-   
-}
-.js:hover{  
-    opacity: 100%;
-}
-.python:hover{  
-    opacity: 100%;
-}
-.c:hover{  
-    opacity: 100%;
-}
-.projetos_arquivos_imgs{
-    position: relative;   
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 17%;
-
-}
-.projetos_arquivos_imgs img{
-
-  width: 17%;  
-  background-color: black;
-  border-radius: 20%;
-  opacity: 80%;
-  cursor: pointer;
-}
-.titulos_projetos{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size:135%;
-    margin-top: 2.5%;
-}
-.pokedex{
-    position:absolute;
-    margin-right: 74%;
-}
-.relogio{
-    position:absolute;
-    margin-right: 25%;
-}
-.calculadora{
-    position:absolute;
-    margin-left: 25%;
-}
-.login{
-    position:absolute;
-    margin-left: 74%;
-}
-.projetow1{
-    margin-left: 5%;
-}
-.projetow4{
-    margin-right: 5%;
-}
-.projetow1:hover{
-    transform: scale(1.08);
-    animation: transform .2s;
-    opacity: 100%;   
-    box-shadow:  0 0 4px rgb(163, 159, 159),
-   0 0 2.5px  #efefef, 0 0 5px white, 0 0 10px white;
-}
-.projetow2:hover{
-    transform: scale(1.08);
-    animation: transform .2s;
-    opacity: 100%;
-    box-shadow:  0 0 4px rgb(163, 159, 159),
-   0 0 2.5px  #6d6b6b, 0 0 5px rgb(136, 136, 136), 0 0 10px rgb(156, 156, 156); 
-}
-
-.projetow3:hover{
-    transform: scale(1.08);
-    animation: transform .2s;
-    opacity: 100%;
-    box-shadow:  0 0 4px rgb(19, 36, 73),
-   0 0 2.5px  rgb(19, 36, 73), 0 0 5px rgb(19, 36, 73), 0 0 10px rgb(19, 36, 73); 
-}
-.projetow4:hover{
-    transform: scale(1.08);
-    animation: transform .2s;
-    opacity: 100%;
-    box-shadow:  0 0 4px rgb(143, 135, 135),
-   0 0 2.5px  #6d6b6b, 0 0 5px rgb(136, 136, 136), 0 0 10px rgb(156, 156, 156); 
-}
-
-.projetow5:hover{
-    transform: scale(1.08);
-    animation: transform .2s;
-    opacity: 100%;   
-    box-shadow:  0 0 4px rgb(50, 62, 79),
-   0 0 2.5px  #384f5e, 0 0 5px rgb(94, 131, 146), 0 0 10px rgb(107, 162, 192);
-}
-.projetow6:hover{
-    transform: scale(1.08);
-    animation: transform .2s;
-    opacity: 100%;
-    box-shadow:  0 0 4px rgb(163, 159, 159),
-   0 0 2.5px  #6d6b6b, 0 0 5px rgb(136, 136, 136), 0 0 10px rgb(156, 156, 156); 
-}
-.projetow7:hover{
-    transform: scale(1.08);
-    animation: transform .2s;
-    opacity: 100%;
-    box-shadow:  0 0 4px rgb(19, 36, 73),
-   0 0 2.5px  rgb(19, 36, 73), 0 0 5px rgb(19, 36, 73), 0 0 10px rgb(19, 36, 73); 
-}
-.projetow8:hover{
-    transform: scale(1.08);
-    animation: transform .2s;
-    opacity: 100%;
-    box-shadow:  0 0 4px rgb(143, 135, 135),
-   0 0 2.5px  #6d6b6b, 0 0 5px rgb(136, 136, 136), 0 0 10px rgb(156, 156, 156); 
-}
-.links{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 100%;
-    width: 80%;
-    height: 4vh;
-    margin-left: 9.5%;
-    margin-top: 2%;
-   
-}
-.links a{
-    cursor: pointer;
-    background-color: black;
-    text-decoration: none;
-    color: white;
+.sobre a{
+    width: 2%;
     height: 2%;
-    width: 14%;
-    padding: 0.3%;
-    border-radius: 20px;
-    box-shadow:  0 0 4px rgb(28, 25, 25),
-    0 0 2.5px  #171717;
-}
-.link1{  
-    position: absolute;
-    margin-right: 73%;  
-    }
-.link2{ 
-    position: absolute;
-    margin-right: 23.5%;
-    }
-.link3{ 
-    position: absolute;
-    margin-left: 26%;
-    }
-.link4{ 
-    position: absolute;
-    margin-left: 74.5%;
-    }
-.link1:hover{
-    background-color: #353535;
-}
-.link2:hover{
-    background-color: #353535;
-}
-.link3:hover{
-    background-color: #353535;
-}
-.link4:hover{
-    background-color: #353535;
 }
 
-.badges2{
-    
-    height: 20vh;
-    width: 100%;
-    position: absolute;
-    margin-left: 2.05%;
-}
-.badges2 img{
-    margin-top: 4%;
-    margin-right: 3%;
-    max-width: 4%;
-    cursor: pointer;
-    opacity: 70%;
-}
-.projetos_arquivos_imgs2{
-    position: relative;   
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 13%;
-}
-.projetos_arquivos_imgs2 img{
 
-  width: 17.48%;  
-  background-color: black;
-  border-radius: 20%;
-  opacity: 80%;
-  cursor: pointer;
-  box-shadow:  0 0 4px rgb(28, 25, 25),
-   0 0 2.5px  #171717, 0 0 15px rgb(28, 25, 25),
-   0 0 2.5px  #171717;
-}
-
-.projetow5{
-    margin-left: 5%;
-}
-
-.projetow8{
-    margin-right: 5%;
-}
-
-.email{
-    position: absolute;
-    margin-top: 6%;
-    margin-left: 2%;
-    width: 80%;
-}
-
-.tituloemail{
-    position: absolute;
-    margin-left: 1%;
-}
-.gmail{
-    position: absolute;
-    margin-top: 2%;
-}
-
-.email img{
-    position: absolute;
-    width: 6%;
-    margin-top: 5%;
-    margin-left: 5.8%;
+.projetos h1{
+    margin-top: 20%;
 }
